@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Barriecito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/barriecito/v18/WWXXlj-CbBOSLY2QTuY_KdU.ttf') format('truetype');
+}
+
+@theme {
+  --color-inverse-surface: #323129;
+  --color-secondary-container: #c7eb9f;
+  --color-surface-tint: #4b5a9c;
+  --color-secondary: #49672a;
+  --color-secondary-fixed-dim: #aed288;
+  --color-surface-container-high: #ece8dc;
+  --color-primary-fixed-dim: #b8c3ff;
+  --color-surface-dim: #dddace;
+  --color-tertiary-fixed-dim: #dfc700;
+  --color-primary-fixed: #dde1ff;
+  --color-error-container: #ffdad6;
+  --color-on-primary-container: #a2b1f9;
+  --color-on-primary-fixed: #001355;
+  --color-on-primary-fixed-variant: #334282;
+  --color-tertiary-fixed: #fee40e;
+  --color-background: #fdf9ed;
+  --color-on-primary: #ffffff;
+  --color-error: #ba1a1a;
+  --color-primary-container: #334282;
+  --color-on-secondary-container: #4d6b2e;
+  --color-on-surface: #1c1c15;
+  --color-primary: #1b2b6a;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-fixed-variant: #504700;
+  --color-on-surface-variant: #454650;
+  --color-on-tertiary-fixed: #201c00;
+  --color-outline: #767681;
+  --color-tertiary: #6b5f00;
+  --color-surface-bright: #fdf9ed;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container-highest: #e6e2d7;
+  --color-inverse-primary: #b8c3ff;
+  --color-on-error-container: #93000a;
+  --color-on-secondary-fixed-variant: #324e14;
+  --color-outline-variant: #c6c5d2;
+  --color-on-tertiary-container: #484000;
+  --color-tertiary-container: #c0ac00;
+  --color-surface: #fdf9ed;
+  --color-surface-container: #f2eee2;
+  --color-on-secondary-fixed: #0e2000;
+  --color-secondary-fixed: #caeea2;
+  --color-surface-variant: #e6e2d7;
+  --color-on-error: #ffffff;
+  --color-on-background: #1c1c15;
+  --color-inverse-on-surface: #f5f1e5;
+  --color-surface-container-low: #f7f3e7;
+
+  --spacing-margin: 1.25rem;
+  --spacing-gutter: 1rem;
+  --spacing-space-xl: 2.25rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-md: 1rem;
+  --spacing-margin-desktop: 2.5rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-lg: 1.5rem;
+
+  --font-barriecito: 'Barriecito', cursive;
+  --font-headline-xl-mobile: 'Bricolage Grotesque', sans-serif;
+  --font-headline-lg-mobile: 'Bricolage Grotesque', sans-serif;
+  --font-headline-xl: 'Bricolage Grotesque', sans-serif;
+  --font-headline-lg: 'Bricolage Grotesque', sans-serif;
+  --font-headline-md: 'Bricolage Grotesque', sans-serif;
+  --font-body-lg: 'Outfit', sans-serif;
+  --font-body-md: 'Outfit', sans-serif;
+  --font-body-sm: 'Outfit', sans-serif;
+  --font-label-lg: 'Outfit', sans-serif;
+  --font-label-md: 'Outfit', sans-serif;
+  --font-label-sm: 'Outfit', sans-serif;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #fdf9ed;
+  }
+  body {
+    overscroll-behavior-y: none;
+    font-family: 'Outfit', sans-serif;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+.font-barriecito,
+[style*="font-family: Barriecito"],
+[style*="font-family: 'Barriecito'"] {
+  font-family: 'Barriecito', cursive !important;
+}
+
+/* Material Symbols sizing */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
